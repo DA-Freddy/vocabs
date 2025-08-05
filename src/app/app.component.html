@@ -8,5 +8,5 @@
 </section>
 
 @for (vocab of firebaseService.vocabs; track $index) {
-  <p>{{ vocab.english }} --   {{ vocab.german }}</p>
+  <p>{{ vocab.english }} --   {{ vocab.german }}</p> <button (click)="firebaseService.deleteVocabs(vocab.id)">Delete</button>
 }
